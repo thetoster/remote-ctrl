@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name STM32G030K8T6)(type Legacy)(uri ${KIPRJMOD}/STM32G030K8T6.mod)(options "")(descr ""))
+  (lib (name Zettler)(type KiCad)(uri ${KIPRJMOD}/Zettler.pretty)(options "")(descr ""))
 )
