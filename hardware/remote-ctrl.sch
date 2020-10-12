@@ -150,10 +150,10 @@ Wire Wire Line
 	6600 3275 6925 3275
 Text Label 6600 3275 0    50   ~ 0
 RF_RST
-Text Label 2425 4225 0    50   ~ 0
+Text Label 3725 2375 3    50   ~ 0
 RF_RST
 Wire Wire Line
-	2425 4225 2725 4225
+	3725 2375 3725 2725
 $Comp
 L Device:Antenna AE1
 U 1 1 5F845B1D
@@ -259,7 +259,7 @@ Wire Wire Line
 	3925 4925 3925 5200
 Wire Wire Line
 	4025 4925 4025 5200
-Text Label 3925 5200 1    50   ~ 0
+Text Label 3825 5200 1    50   ~ 0
 BTN-1
 Text Label 4025 5200 1    50   ~ 0
 BTN-2
@@ -329,12 +329,12 @@ LED-1
 Text Label 7225 1400 2    50   ~ 0
 LED-2
 Wire Wire Line
-	3825 2725 3825 2375
+	3425 4925 3425 5200
 Wire Wire Line
-	3725 2725 3725 2375
-Text Label 3825 2375 3    50   ~ 0
+	3825 4925 3825 5200
+Text Label 3425 5200 1    50   ~ 0
 LED-1
-Text Label 3725 2375 3    50   ~ 0
+Text Label 3925 5200 1    50   ~ 0
 LED-2
 $Comp
 L Switch:SW_DIP_x03 SW1
@@ -390,11 +390,11 @@ Wire Wire Line
 	3525 2725 3525 2375
 Wire Wire Line
 	3425 2725 3425 2375
-Text Label 3625 2375 3    50   ~ 0
+Text Label 3425 2375 3    50   ~ 0
 CODE-1
 Text Label 3525 2375 3    50   ~ 0
 CODE-2
-Text Label 3425 2375 3    50   ~ 0
+Text Label 3625 2375 3    50   ~ 0
 CODE-3
 $Comp
 L Relay:AZ850-x K1
@@ -866,8 +866,8 @@ Wire Wire Line
 Text Label 8275 2875 2    50   ~ 0
 RF_IRQ
 Wire Wire Line
-	3625 4925 3625 5200
-Text Label 3625 5200 1    50   ~ 0
+	3825 2725 3825 2375
+Text Label 3825 2375 3    50   ~ 0
 RF_IRQ
 $Comp
 L Device:C_Small C6
@@ -933,4 +933,69 @@ F 4 "TACTM-613N-F NINIGI" H 5250 1425 50  0001 C CNN "TME"
 	1    5250 1425
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2725 3625 2300 3625
+Text Label 2300 3625 0    50   ~ 0
+EXT-1
+Wire Wire Line
+	3325 2725 3325 2375
+Text Label 3325 2375 3    50   ~ 0
+EXT-2
+Wire Wire Line
+	3925 2725 3925 2375
+Text Label 3925 2375 3    50   ~ 0
+EXT-3
+$Comp
+L Connector:Conn_01x05_Female J?
+U 1 1 5F9FDD2B
+P 1425 2275
+F 0 "J?" H 1317 1850 50  0000 C CNN
+F 1 "EXTERNAL" H 1317 1941 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1425 2275 50  0001 C CNN
+F 3 "~" H 1425 2275 50  0001 C CNN
+	1    1425 2275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1625 2075 1875 2075
+Wire Wire Line
+	1625 2475 1875 2475
+Wire Wire Line
+	1875 2475 1875 2600
+Wire Wire Line
+	1875 2075 1875 1975
+$Comp
+L power:GND #PWR?
+U 1 1 5FA05008
+P 1875 2600
+F 0 "#PWR?" H 1875 2350 50  0001 C CNN
+F 1 "GND" H 1880 2427 50  0000 C CNN
+F 2 "" H 1875 2600 50  0001 C CNN
+F 3 "" H 1875 2600 50  0001 C CNN
+	1    1875 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 2175 1875 2175
+Wire Wire Line
+	1625 2275 1875 2275
+$Comp
+L power:VDD #PWR?
+U 1 1 5FA05012
+P 1875 1975
+F 0 "#PWR?" H 1875 1825 50  0001 C CNN
+F 1 "VDD" H 1890 2148 50  0000 C CNN
+F 2 "" H 1875 1975 50  0001 C CNN
+F 3 "" H 1875 1975 50  0001 C CNN
+	1    1875 1975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 2375 1875 2375
+Text Label 1875 2175 2    50   ~ 0
+EXT-1
+Text Label 1875 2275 2    50   ~ 0
+EXT-2
+Text Label 1875 2375 2    50   ~ 0
+EXT-3
 $EndSCHEMATC
